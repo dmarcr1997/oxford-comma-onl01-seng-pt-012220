@@ -1,8 +1,9 @@
 def oxford_comma(array)
+  new_string = 
   if array.count() > 2
     last_elm = array.pop()
-    array.join(", ")  
-    array << last_elm
+    new_string = array.join(", ")  
+    new_string << ", and #{last_elm}"
   else 
-    array.join("and ")
+    new_string = array.join("and ")
 end
